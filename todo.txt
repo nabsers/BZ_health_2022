@@ -1,3 +1,0 @@
-check average calue calculation on main js
-
-for 4 pdf add different content
