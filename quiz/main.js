@@ -57,19 +57,31 @@ function loadNextQuestion () {
         alert('Please select your answer!');
         return;
     } else if ((document.querySelector('input[type="radio"]:checked').value) == 1) {
-          localStorage.setItem("q5response", " You are doing 90 to 180+ minutes of exercise each day. This is excellent!");
-        // alert('selected value is one');
+         // alert('selected value is one');
+          localStorage.setItem("q5response", " You are doing 90 to 180+ minutes daily exercise");
+          localStorage.setItem("q6response", " You are sleeping 9 to 12+ hours. ");
+          localStorage.setItem("q7response", " You are including plenty of vegetables.");
+          localStorage.setItem("q8response", " You are including plenty of fruits. ");
     }
     else if ((document.querySelector('input[type="radio"]:checked').value) == 2) {
         // alert('selected value is two');
-        localStorage.setItem("q5response", " You are doing 40 to 90 minutes of exercise each day.  This if very good!");
+        localStorage.setItem("q5response", " You are doing 40 to 90 minutes of daily exercise");
+        localStorage.setItem("q6response", " You are getting 7 to 9 hours of sleep.");
+        localStorage.setItem("q7response", " You are including 4 to 21 servings og Veg.");
+        localStorage.setItem("q8response", " You are including 14 to 21 servings of fruits.   ");
     }
     else if ((document.querySelector('input[type="radio"]:checked').value) == 3) {
         // alert('selected value is three');
         localStorage.setItem("q5response", "You are doing 20 to 40 minutes each day. Good work! ");
+        localStorage.setItem("q6response", " You are only getting 4 to 6 hours of sleep.");
+        localStorage.setItem("q7response", " You are including 7 - 14 servings of Veg.  ");
+        localStorage.setItem("q8response", " You are including 7 to 14 servings of fruits. ");
     } else {
         // alert('selected value is four');
-        localStorage.setItem("q5response", "It is imprtant to get started on a daily routine of excercise.  At least 10 to 20 minutes a day to start with.");
+        localStorage.setItem("q5response", " You are not getting enough exercise.");
+        localStorage.setItem("q6response", " You are only getting 0 to 4 hours of sleep.");    
+        localStorage.setItem("q7response", " Your vegetable intake needs to be increased.");
+        localStorage.setItem("q8response", " Your fruit intake needs to be increased.");
     } 
 
    
@@ -100,7 +112,7 @@ function loadNextQuestion () {
 
 
   // Set Item
-
+  localStorage.clear;
   localStorage.setItem("years", totalScore);
 
 
