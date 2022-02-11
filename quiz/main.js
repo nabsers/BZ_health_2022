@@ -56,7 +56,25 @@ function loadNextQuestion () {
     if(!selectedOption) {
         alert('Please select your answer!');
         return;
+    } else if ((document.querySelector('input[type="radio"]:checked').value) == 1) {
+          localStorage.setItem("q5response", " You are doing 90 to 180+ minutes of exercise each day. This is excellent!");
+        // alert('selected value is one');
     }
+    else if ((document.querySelector('input[type="radio"]:checked').value) == 2) {
+        // alert('selected value is two');
+        localStorage.setItem("q5response", " You are doing 40 to 90 minutes of exercise each day.  This if very good!");
+    }
+    else if ((document.querySelector('input[type="radio"]:checked').value) == 3) {
+        // alert('selected value is three');
+        localStorage.setItem("q5response", "You are doing 20 to 40 minutes each day. Good work! ");
+    } else {
+        // alert('selected value is four');
+        localStorage.setItem("q5response", "It is imprtant to get started on a daily routine of excercise.  At least 10 to 20 minutes a day to start with.");
+    } 
+
+   
+
+   
     //Get value of selected radio
     const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
 
@@ -82,7 +100,7 @@ function loadNextQuestion () {
 
 
   // Set Item
-  localStorage.setItem("lastname", "Smith");
+
   localStorage.setItem("years", totalScore);
 
 
@@ -107,7 +125,7 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results2.html">View Results</a></button>`;
+                      <button class="get-print-btn" ><a href="results1.html">View Results</a></button>`;
                       break;
                   case ((totalScore >= 34) && (totalScore <= 44)):
                       // selIndex = 2;
@@ -117,7 +135,7 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results3.html">View Results</a></button>`;
+                      <button class="get-print-btn" ><a href="results1.html">View Results</a></button>`;
                       break;
                   case ((totalScore >= 45) && (totalScore <= 60)):
                       // selIndex = 3;
@@ -127,20 +145,11 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results4.html">View Results</a></button>`;
+                      <button class="get-print-btn" ><a href="results1.html">View Results</a></button>`;
                       break;
           
               }
       
-            //   container.style.display = 'none';
-            //   result.innerHTML =
-            //    `         
-            //    <div class="summary">
-            //    <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
-            //   </div>
-            //   <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
-        
-
         
         return;
     }
