@@ -76,7 +76,7 @@ const questions = [
  // Question 7
     "question":
       "During past week, how many servings of fresh veg did you consume",
-    "answer1": "21 - 28+ servings",
+    "answer1": "21+ servings",
     "answer1Total": "4",
     "answer2": "14 - 21 servings",
     "answer2Total": "3",
@@ -89,7 +89,7 @@ const questions = [
      // Question 8
     "question":
     "During past week, how many servings of fruits did you consume",
-  "answer1": "21 - 28+ servings",
+  "answer1": "21+ servings",
   "answer1Total": "4",
   "answer2": "14 - 21 servings",
   "answer2Total": "3",
@@ -99,10 +99,10 @@ const questions = [
   "answer4Total": "1"
   },
   {
-    // Question 9
+    // Question 9 sounds like leh·gyoomz
     "question":
     "During past week, how many servings of  beans and legumes did you consume",
-  "answer1": "21 - 28+ servings",
+  "answer1": "21+ servings",
   "answer1Total": "4",
   "answer2": "14 - 21 servings",
   "answer2Total": "3",
@@ -114,8 +114,8 @@ const questions = [
   {
     // Question 10
     "question":
-    "During past week, how many servings of nuts did you consume",
-  "answer1": "21 - 28+ servings",
+    "During past week, how many servings of nuts and seeds did you consume",
+  "answer1": "21+ servings",
   "answer1Total": "1",
   "answer2": "14 - 21 servings",
   "answer2Total": "3",
@@ -127,66 +127,66 @@ const questions = [
   {
     // Question 11
     "question":
-    "During past week, how many servings of seafood did you consume",
-  "answer1": "21 - 28+ servings",
+    "During past week, how many servings of fish and shellfish did you consume",
+  "answer1": "10+ servings",
   "answer1Total": "2",
-  "answer2": "14 - 21 servings",
+  "answer2": "4 - 9 servings",
   "answer2Total": "3",
-  "answer3": "7 - 14 servings",
+  "answer3": "2 - 3 servings",
   "answer3Total": "4",
-  "answer4": "0 - 7 servings",
+  "answer4": "No servings of fish and shellfish ",
   "answer4Total": "1"
   },
   {
     // Question 12
     "question":
     "During past week, how many servings of meat did you consume",
-  "answer1": "21 - 28+ servings",
+  "answer1": "10+ servings",
   "answer1Total": "1",
-  "answer2": "14 - 21 servings",
-  "answer2Total": "4",
-  "answer3": "7 - 14 servings",
-  "answer3Total": "3",
-  "answer4": "0 - 7 servings",
-  "answer4Total": "2"
+  "answer2": "4 - 9 servings",
+  "answer2Total": "2",
+  "answer3": "2 - 3 servings",
+  "answer3Total": "4",
+  "answer4": "No servings of meat",
+  "answer4Total": "3"
   },
   {
     // Question 13
     "question":
     "During past week, how many servings of sweets did you consume",
-  "answer1": "21 - 28+ servings",
+  "answer1": "16+ servings",
   "answer1Total": "1",
-  "answer2": "14 - 21 servings",
+  "answer2": "11 - 15 servings",
   "answer2Total": "2",
-  "answer3": "7 - 14 servings",
+  "answer3": "6 - 10 servings",
   "answer3Total": "3",
-  "answer4": "0 - 7 servings",
+  "answer4": "0 - 5 servings",
   "answer4Total": "4"
   },
   {
     // Question 14
     "question":
     "During past week, how many servings of salty snacks did you consume",
-  "answer1": "21 - 28+ servings",
+  "answer1": "22+ servings",
   "answer1Total": "1",
-  "answer2": "14 - 21 servings",
+  "answer2": "15 - 21 servings",
   "answer2Total": "2",
   "answer3": "7 - 14 servings",
   "answer3Total": "3",
-  "answer4": "0 - 7 servings",
+  "answer4": "0 - 6 servings",
   "answer4Total": "4"
   },
   {
     // Question 15
     "question":
     "During past week, how many servings of alcoholic beverages did you consume",
-  "answer1": "21 - 28+ servings",
+  "answer1": "21+ servings",
   "answer1Total": "1",
-  "answer2": "14 - 21 servings",
-  "answer2Total": "3",
+  "answer2": "15 - 20 servings",
+  "answer2Total": "2",
   "answer3": "7 - 14 servings",
   "answer3Total": "4",
-  "answer4": "0 - 7 servings",
-  "answer4Total": "2"
+  "answer4": "0 - 6 servings",
+  "answer4Total": "3"
   }
 ]

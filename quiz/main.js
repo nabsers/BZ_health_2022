@@ -58,30 +58,60 @@ function loadNextQuestion () {
         return;
     } else if ((document.querySelector('input[type="radio"]:checked').value) == 1) {
          // alert('selected value is one');
-          localStorage.setItem("q5response", " You are doing 90 to 180+ minutes daily exercise");
-          localStorage.setItem("q6response", " You are sleeping 9 to 12+ hours. ");
-          localStorage.setItem("q7response", " You are including plenty of vegetables.");
-          localStorage.setItem("q8response", " You are including plenty of fruits. ");
+          localStorage.setItem("q5response", "You are not getting enough exercise. ");
+          localStorage.setItem("q6response", "You are only getting 0 to 4 hours of sleep. ");
+          localStorage.setItem("q7response", "You are including plenty of vegetables. ");
+          localStorage.setItem("q8response", "You are including 21+ servings of fruits. ");
+          localStorage.setItem("q9response", "You are including 0 - 7 servings of beans and legumes. ");
+          localStorage.setItem("q10response", "You are including 21+ servings nuts and seeds. ");
+          localStorage.setItem("q11response", "You fish and shellfish intake needs to be increased. ");
+          localStorage.setItem("q12response", "You are including 10+ servings of meat. ");
+          localStorage.setItem("q13response", "You are including 16+ servings of sweets. ");
+          localStorage.setItem("q14response", "You are including 22+ servings of salty snacks. ");
+          localStorage.setItem("q15response", "You are including 21+ servings of alcoholic beverages. ");
     }
     else if ((document.querySelector('input[type="radio"]:checked').value) == 2) {
         // alert('selected value is two');
-        localStorage.setItem("q5response", " You are doing 40 to 90 minutes of daily exercise");
-        localStorage.setItem("q6response", " You are getting 7 to 9 hours of sleep.");
-        localStorage.setItem("q7response", " You are including 4 to 21 servings og Veg.");
-        localStorage.setItem("q8response", " You are including 14 to 21 servings of fruits.   ");
+        localStorage.setItem("q5response", "You are doing 20 to 40 minutes of daily exercise. ");
+        localStorage.setItem("q6response", "You are only getting 4 to 6 hours of sleep. ");
+        localStorage.setItem("q7response", "You are including 7 to 14 servings og Veg. ");
+        localStorage.setItem("q8response", "You are including 7 to 14 servings of fruits. ");
+        localStorage.setItem("q9response", "You are including 21+ servings of beans and legumes. ");
+        localStorage.setItem("q10response", "Your nuts and seed intake needs to be increased. ");
+        localStorage.setItem("q11response", "You are including 10+ servings of fish and shellfish. ");
+        localStorage.setItem("q12response", "You are including 4 - 9 servings of meat. ");
+        localStorage.setItem("q13response", "You are including 11 - 15 servings of sweets. ");
+        localStorage.setItem("q14response", "You are including 15 - 21 servings of salty snacks. ");
+        localStorage.setItem("q15response", "You are including 15 - 20 servings of alcoholic beverages. ");
     }
     else if ((document.querySelector('input[type="radio"]:checked').value) == 3) {
         // alert('selected value is three');
-        localStorage.setItem("q5response", "You are doing 20 to 40 minutes each day. Good work! ");
-        localStorage.setItem("q6response", " You are only getting 4 to 6 hours of sleep.");
-        localStorage.setItem("q7response", " You are including 7 - 14 servings of Veg.  ");
-        localStorage.setItem("q8response", " You are including 7 to 14 servings of fruits. ");
+        localStorage.setItem("q5response", "You are doing 40 to 90 minutes each day. ");
+        localStorage.setItem("q6response", "You are sleeping 9 to 12+ hours. ");
+        localStorage.setItem("q7response", "You are including 14 - 21 servings of Veg.  ");
+        localStorage.setItem("q8response", "You are including 14 to 21 servings of fruits. ");
+        localStorage.setItem("q9response", "You are including 14 to 21 servings of beans and legumes. ");
+        localStorage.setItem("q10response", "You are including 14 - 21 servings of nuts and seeds. ");
+        localStorage.setItem("q11response", "You are including 4 to 9 servings of fish and shellfish. ");
+        localStorage.setItem("q12response", "You meat intake can be increased. ");
+        localStorage.setItem("q13response", "You are including 6 - 10 servings of sweets. ");
+        localStorage.setItem("q14response", "You are including 7 - 14 servings of salty snacks. ");
+        localStorage.setItem("q15response", "You are including 0 - 6 servings of alcoholic beverages. ");
+        
+
     } else {
         // alert('selected value is four');
-        localStorage.setItem("q5response", " You are not getting enough exercise.");
-        localStorage.setItem("q6response", " You are only getting 0 to 4 hours of sleep.");    
-        localStorage.setItem("q7response", " Your vegetable intake needs to be increased.");
-        localStorage.setItem("q8response", " Your fruit intake needs to be increased.");
+        localStorage.setItem("q5response", "You are doing 90 to 180+ minutes daily exercise. ");
+        localStorage.setItem("q6response", "You are getting 7 to 9 hours of sleep. ");    
+        localStorage.setItem("q7response", "You are including 7 to 14 servings of veg. ");
+        localStorage.setItem("q8response", "You are including 7 to 14 servings of fruits. ");
+        localStorage.setItem("q9response", "You are including 7 to 14 servings of beans and legumes. ");
+        localStorage.setItem("q10response", "You are including 7 to 14 servings of nuts and seeds. ");
+        localStorage.setItem("q11response", "You are including 2 to 3 servings of fish and shellfish. ");
+        localStorage.setItem("q12response", "You are including 2 to 3 servings of meat. ");
+        localStorage.setItem("q13response", "You are including 0 - 5 servings of sweets. ");
+        localStorage.setItem("q14response", "You are including 0 - 6 servings of salty snacks. ");
+        localStorage.setItem("q15response", "You are including 7 -14 servings of alcoholic beverages. ");
     } 
 
    
@@ -127,7 +157,7 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results1.html">View Results</a></button>`;
+                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
                       break;
                   case ((totalScore >= 23) && (totalScore <= 33)):
                       // selIndex = 1;
@@ -137,7 +167,7 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results1.html">View Results</a></button>`;
+                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
                       break;
                   case ((totalScore >= 34) && (totalScore <= 44)):
                       // selIndex = 2;
@@ -147,7 +177,7 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results1.html">View Results</a></button>`;
+                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
                       break;
                   case ((totalScore >= 45) && (totalScore <= 60)):
                       // selIndex = 3;
@@ -157,7 +187,7 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results1.html">View Results</a></button>`;
+                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
                       break;
           
               }
