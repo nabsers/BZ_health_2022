@@ -187,7 +187,8 @@ function loadNextQuestion () {
                        <div class="summary">
                        <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
                       </div>
-                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
+                      <button type="button" class="get-print-btn" ><a href="results.html">View Results</a></button>`;
+            
                       break;
           
               }
