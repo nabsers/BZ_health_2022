@@ -16,10 +16,7 @@ body {
   url("../assets/img/hero-bg.jpg");
 
 
-  /* 
-   background:  linear-gradient(250deg, #5958b9, #1ca5a5),
-  background: linear-gradient(to right, transparent, mistyrose),
-  url("critters.png"); */
+
 }
 .quiz-container {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;  text-shadow: 1px 1px white;
