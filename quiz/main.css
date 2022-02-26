@@ -131,3 +131,8 @@ button:focus {
 .summary h1 {
   align-self: center;
 }
+
+img {
+  width: 100%; /* or max-width: 100%; */
+  height: auto;
+}
