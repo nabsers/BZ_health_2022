@@ -16,9 +16,9 @@
     }
   });
 
-  $("#clients-carousel").owlCarousel({
-    navigation : true
-  });
+  // $("#clients-carousel").owlCarousel({
+  //   navigation : true
+  // });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
