@@ -15,9 +15,9 @@ const questions = [
   {
    // Question 2
     "question": "Please choose your age range?",
-    "answer1": "13 - 19",
+    "answer1": "18 - 29",
     "answer1Total": "4",
-    "answer2": "20 - 39",
+    "answer2": "30 - 39",
     "answer2Total": "3",
     "answer3": "40 - 59",
     "answer3Total": "2",
