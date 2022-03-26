@@ -49,7 +49,6 @@ function generateQuestions (index) {
     option4.innerHTML = `${question.answer4}`
 }
 
-
 function loadNextQuestion () {
     const selectedOption = document.querySelector('input[type="radio"]:checked');
     //Check if there is a radio input checked
@@ -188,9 +187,8 @@ function loadNextQuestion () {
 
             break;
 
-    }
-      
-        
+    }   
+     
         return;
     }
     generateQuestions(currentQuestion);
