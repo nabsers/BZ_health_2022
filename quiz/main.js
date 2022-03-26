@@ -123,24 +123,22 @@ function loadNextQuestion () {
   
     const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
-    //Finally we incement the current question number ( to be used as the index for each array)
+    //Incement the current question number ( to be used as the index for each array)
     currentQuestion++;
 
-    //once finished clear checked
+    //Once finished clear checked option
     selectedOption.checked = false;
 
-    //If quiz is on the final question
+    //If quiz is on the final question show finish button
     if(currentQuestion == totalQuestions - 1) {
         nextButton.textContent = 'Finish';
     }
-    //If the quiz is finished then we hide the questions container and show the results “”
+    //If the quiz is finished show the results 
     if(currentQuestion == totalQuestions) {
 
-
-  // Set Item
-  localStorage.clear;
-  localStorage.setItem("years", totalScore);
-
+    // Set Item in local storage
+    localStorage.clear;
+    localStorage.setItem("years", totalScore);
 
     switch(true)
     {
@@ -184,11 +182,8 @@ function loadNextQuestion () {
             <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
             </div>
             <button type="button" class="get-print-btn" ><a href="results.html">View Results</a></button>`;
-
             break;
-
     }   
-     
         return;
     }
     generateQuestions(currentQuestion);
@@ -196,7 +191,7 @@ function loadNextQuestion () {
 
 //Function to load previous question
 function loadPreviousQuestion() {
-    //Decrement quentions index
+    //decrement question index
     currentQuestion--;
     //remove last array value;
     score.pop();
@@ -212,10 +207,8 @@ function restartQuiz(e) {
     score = [];
     //Reload quiz to the start
     location.reload();
-    }
-   
+    }  
 }
-
 generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
 previousButton.addEventListener('click',loadPreviousQuestion);
