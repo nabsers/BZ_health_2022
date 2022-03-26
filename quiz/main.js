@@ -113,26 +113,23 @@ function loadNextQuestion () {
         localStorage.setItem("q14response", "You are including 0 - 6 servings of salty snacks. ");
         localStorage.setItem("q15response", "You are including 7 -14 servings of alcoholic beverages. ");
     } 
-
-   
-
    
     //Get value of selected radio
     const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
 
-    ////Add the answer score to the score array
+    //Add the answer score to the score array
     score.push(answerScore);
 
     selectedAnswersData.push()
-    
-
+  
     const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
     //Finally we incement the current question number ( to be used as the index for each array)
     currentQuestion++;
 
-        //once finished clear checked
-        selectedOption.checked = false;
+    //once finished clear checked
+    selectedOption.checked = false;
+
     //If quiz is on the final question
     if(currentQuestion == totalQuestions - 1) {
         nextButton.textContent = 'Finish';
@@ -146,52 +143,52 @@ function loadNextQuestion () {
   localStorage.setItem("years", totalScore);
 
 
-              switch(true)
-              {
-                  case ((totalScore >= 15) && (totalScore <= 22)):
-                      //show results1.html
-                      // selIndex = 0;
-                      container.style.display = 'none';
-                      result.innerHTML =
-                       `         
-                       <div class="summary">
-                       <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
-                      </div>
-                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
-                      break;
-                  case ((totalScore >= 23) && (totalScore <= 33)):
-                      // selIndex = 1;
-                      container.style.display = 'none';
-                      result.innerHTML =
-                       `         
-                       <div class="summary">
-                       <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
-                      </div>
-                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
-                      break;
-                  case ((totalScore >= 34) && (totalScore <= 44)):
-                      // selIndex = 2;
-                      container.style.display = 'none';
-                      result.innerHTML =
-                       `         
-                       <div class="summary">
-                       <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
-                      </div>
-                      <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
-                      break;
-                  case ((totalScore >= 45) && (totalScore <= 60)):
-                      // selIndex = 3;
-                      container.style.display = 'none';
-                      result.innerHTML =
-                       `         
-                       <div class="summary">
-                       <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
-                      </div>
-                      <button type="button" class="get-print-btn" ><a href="results.html">View Results</a></button>`;
-            
-                      break;
-          
-              }
+    switch(true)
+    {
+        case ((totalScore >= 15) && (totalScore <= 22)):
+            //show results1.html
+            // selIndex = 0;
+            container.style.display = 'none';
+            result.innerHTML =
+            `         
+            <div class="summary">
+            <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
+            </div>
+            <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
+            break;
+        case ((totalScore >= 23) && (totalScore <= 33)):
+            // selIndex = 1;
+            container.style.display = 'none';
+            result.innerHTML =
+            `         
+            <div class="summary">
+            <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
+            </div>
+            <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
+            break;
+        case ((totalScore >= 34) && (totalScore <= 44)):
+            // selIndex = 2;
+            container.style.display = 'none';
+            result.innerHTML =
+            `         
+            <div class="summary">
+            <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
+            </div>
+            <button class="get-print-btn" ><a href="results.html">View Results</a></button>`;
+            break;
+        case ((totalScore >= 45) && (totalScore <= 60)):
+            // selIndex = 3;
+            container.style.display = 'none';
+            result.innerHTML =
+            `         
+            <div class="summary">
+            <h2 class="final-score">Your lifestyle changes could add: ${totalScore} healthy years!</h2>
+            </div>
+            <button type="button" class="get-print-btn" ><a href="results.html">View Results</a></button>`;
+
+            break;
+
+    }
       
         
         return;
@@ -218,11 +215,8 @@ function restartQuiz(e) {
     //Reload quiz to the start
     location.reload();
     }
-
-
    
 }
-
 
 generateQuestions(currentQuestion);
 nextButton.addEventListener('click', loadNextQuestion);
